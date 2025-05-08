@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 992px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -10px;
+    margin-right: -10px;
+
+}
+
+div {
+    background: rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+}
+
+.col {
+    flex: 1 1 100%;
+    padding: 0 10px;
+}
+
+/*.col {*/
+/*    float: right;*/
+/*}*/
+
+/*.row:after {*/
+/*    content: "";*/
+/*    display: block;*/
+/*    clear: both;*/
+
+/*}*/
+
+.col-11 {
+    max-width: 11.1111%;
+    flex-basis: 11.1111%;
+    background: fuchsia;
+}
+
+.col-25 {
+    max-width: 25%;
+    flex-basis: 25%;
+    background: greenyellow;
+}
+
+.col-33 {
+    max-width: 33.3333%;
+    flex-basis: 33.3333%;
+    background: aqua;
+}
+
+.col-50 {
+    max-width: 50%;
+    flex-basis: 50%;
+    background: red;
+}
+
+@media (max-width: 768px) {
+    .col-11 {
+        max-width: 33.3333%;
+        flex-basis: 33.3333%;
+    }
+
+    .col-25 {
+        max-width: 50%;
+        flex-basis: 50%;
+    }
+
+    .col-33 {
+        max-width: 100%;
+        flex-basis: 100%;
+    }
+
+    .col-50 {
+        max-width: 100%;
+        flex-basis: 100%;
+    }
+}
+@media (min-width: 992px) {
+    div {
+        background: green;
+    }
+}
